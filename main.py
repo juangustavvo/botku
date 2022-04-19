@@ -31,18 +31,18 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_sticker('https://t.me/jvgbro')
-    update.message.reply_text('Hallo Selamat Datang Di Bot TT️',parse_mode=_ParseMode)
+    update.message.reply_sticker('https://t.me/lanuna_chat/20481')
+    update.message.reply_text('TIKTOK DOWNLOAD\n\n🔗 KIRIM LINK TAUTAN\n\n👻✌️',parse_mode=_ParseMode)
 
 def about_handler(update, context):
     update.message.reply_sticker('https://t.me/slbotzone/206273')
-    update.message.reply_text('🇮🇩\n\n`My🇮🇩🇮🇩🇮🇩🇮🇩 Owner Is` :- MEHHOSAN',parse_mode=_ParseMode)
+    update.message.reply_text('TIKTOK DOWNLOADER\n\n`Owner` :- @jvgbro',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
-    update.message.reply_text('Twitter: @juangustavvo',parse_mode=_ParseMode)
+    update.message.reply_text('`Owner` :- @jvgbro\n\n`Founder` :- @juangustavvo\n\n`Dev` :- @jvgbro',parse_mode=_ParseMode)
 
 def help_handler(update, context):
-    update.message.reply_text('🔗 Kirim Tautan Tiktok',parse_mode=_ParseMode)
+    update.message.reply_text('🔗 KIRIM LINK, then,\n🚀 Bot ini akan Mengunduh dan Mengirim Video TikTok itu untuk Anda.\n\n🔑 BOT Perintah : /start , /about , /devs , /help',parse_mode=_ParseMode)
   
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
@@ -54,8 +54,8 @@ def Download_Video(Link,update, context):
     no_watermark=None
     watermark=None
 
-    status_msg=message.reply_text('🚀 SABAR LG DONLOT KE SERVER ....')
-    status_sticker=message.reply_sticker('https://t.me/slbotzone/206254')
+    status_msg=message.reply_text('🚀 DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ ....')
+    status_sticker=message.reply_sticker('https://t.me/lanuna_chat/20482')
 
     # Getting Download Links Using API
     try:
@@ -65,19 +65,19 @@ def Download_Video(Link,update, context):
        print('Download Links Generated \n\n\n'+str(req)+'\n\n\n')
     except:
         print('Download Links Generate Error !!!')
-        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Lapor Ke Developer : @jvgbro')
+        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @jvgbro')
         status_sticker.delete()
         return
     
     caption_text="""◇───────────────◇
 ✅ Successfully Downloaded {} Video 🔰
-🔰 Powerd by : [🏖 TikTok Download Bot 🏖](https://github.com/juangustavvo/jvgbot/)
-[👻MEHHO✌️ ](https://t.me/jvgbro)
+🔰 Powerd by : [🏖 TikTok Download 🏖](https://twitter.com/juangustavvo)
+[👻JVG TEAM✌️ ](https://t.me/jvgbro)
 ◇───────────────◇"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
-    status_msg.edit_text('☘️ LAGI DI UPLOAD....')
+    status_msg.edit_text('☘️ 𝚄𝚙𝚕𝚘𝚊𝚍𝚒𝚗𝚐 𝚝𝚘 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖....')
     message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
     message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Watermark'),parse_mode=_ParseMode)
 
@@ -123,6 +123,6 @@ if __name__ == '__main__':
 # Example For https://github.com/Single-Developers/API/blob/main/tiktok/Note.md
 
 # https://t.me/STMDevelopers
-# https://t.me/STM_Developers
+# https://t.me/jvgbro
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇

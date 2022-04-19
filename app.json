@@ -1,12 +1,12 @@
 {
-  "name": "JVGBOT",
-  "description": "JVG TEAM ",
+  "name": "Tiktok Download",
+  "description": "Telegram BOT to Download TikTok Videos ",
   "repository": "https://github.com/juangustavvo/jvgbot/",
-  "logo": "https://telegra.ph/file/8801b1ec6d4102366e81a.jpg",
+  "logo": "https://telegra.ph/file/133bee51791cead4bd80d.jpg",
   "keywords": ["telegram", "bot", "api", "tiktok", "tiktok-api"],
   "env": {
     "BOT_TOKEN": {
-            "description": "🇮🇩🇮🇩🇮🇩🇮🇩🇮🇩)",
+            "description": "API Token for your Telegram bot (Take it from @BotFather)",
             "required": true
     }
   }
